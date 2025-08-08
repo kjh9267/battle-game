@@ -1,0 +1,12 @@
+Library/
+Temp/
+Build/
+obj/
+.idea/
+TutorialInfo/
+Logs/
+Assets/Firebase/Plugins/x86_64/FirebaseCppApp-12_9_0.bundle
+Assets/Firebase/Plugins/x86_64/FirebaseCppApp-12_9_0.so
+.utmp
+Galaxy Coins_BurstDebugInformation_DoNotShip
+.vscode
