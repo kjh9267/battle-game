@@ -9,6 +9,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8522962543190730296, guid: 908df63d25e7a4729b168014acff84f6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8522962543190730296, guid: 908df63d25e7a4729b168014acff84f6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8522962543190730296, guid: 908df63d25e7a4729b168014acff84f6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8522962543190730296, guid: 908df63d25e7a4729b168014acff84f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -50,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9010706603928173698, guid: 908df63d25e7a4729b168014acff84f6, type: 3}
       propertyPath: m_Name
-      value: HJD_FP_ramp01 Variant
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
