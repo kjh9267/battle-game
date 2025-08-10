@@ -10,6 +10,7 @@ public class MapGenerator : MonoBehaviour
     public int height = 10;
     public float tileSize = 1f;
 
+
     int[,] mapData = new int[,]
     {
         {0,0,0,0,0,0,0,0,0,0},

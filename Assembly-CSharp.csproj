@@ -48,8 +48,8 @@
   <ItemGroup>
     <Compile Include="Assets/_Scripts/NavMeshManager.cs" />
     <Compile Include="Assets/_Scripts/BattleManager.cs" />
+    <Compile Include="Assets/_Scripts/Warrior.cs" />
     <Compile Include="Assets/_Scripts/SoldierSpawner.cs" />
-    <Compile Include="Assets/_Scripts/Soldier.cs" />
     <Compile Include="Assets/_Scripts/MapGenerator.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/6000.0.53f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

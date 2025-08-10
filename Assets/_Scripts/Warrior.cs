@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Soldier : MonoBehaviour
+public class Warrior : MonoBehaviour
 {
     public float attackRange = 2f;
     public float attackCooldown = 1f;
@@ -65,7 +65,7 @@ public class Soldier : MonoBehaviour
         {
             if (target != null)
             {
-                var health = target.GetComponent<Soldier>();
+                var health = target.GetComponent<Warrior>();
                 if (health != null)
                     health.TakeDamage(damage);
             }
