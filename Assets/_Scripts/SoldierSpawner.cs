@@ -2,12 +2,27 @@ using UnityEngine;
 
 public class SoldierSpawner : MonoBehaviour
 {
+    public static SoldierSpawner Instance { get; private set; }
+
     public GameObject teamAPrefab;
     public GameObject teamBPrefab;
     public int teamACount = 10;
     public int teamBCount = 10;
     public Vector2 spawnAreaSize = new Vector2(20f, 20f);
 
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    
     void Start()
     {
         SpawnTeam(teamAPrefab, "TeamA", teamACount);

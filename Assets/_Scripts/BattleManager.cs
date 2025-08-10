@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class BattleManager : MonoBehaviour
 {
+    public static BattleManager Instance { get; private set; }
+
     public GameObject soldierPrefabTeamA;
     public GameObject soldierPrefabTeamB;
     public int teamACount = 5;
@@ -10,6 +12,19 @@ public class BattleManager : MonoBehaviour
     public Transform teamASpawnPoint;
     public Transform teamBSpawnPoint;
 
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+        
     void Start()
     {
         SpawnTeam(soldierPrefabTeamA, teamACount, teamASpawnPoint, "TeamA");
