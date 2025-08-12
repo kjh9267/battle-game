@@ -46,7 +46,7 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.53f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/IL3DN/Scripts/Editor/IL3DN_Wind_Editor.cs" />
+    <Compile Include="Assets/ExplosiveLLC/Editor/SetupInputLayers.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/6000.0.53f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
