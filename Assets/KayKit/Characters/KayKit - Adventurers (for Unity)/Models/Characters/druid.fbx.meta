@@ -1,12 +1,19 @@
 fileFormatVersion: 2
 guid: d96295fc0cb4147469f790644376b7bf
+AssetOrigin:
+  serializedVersion: 1
+  productId: 290679
+  packageName: KayKit - Adventurers Character Pack (for Unity)
+  packageVersion: 1.0
+  assetPath: Assets/KayKit/Characters/KayKit - Adventurers (for Unity)/Models/Characters/druid.fbx
+  uploadId: 678573
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 2
-    materialName: 0
+    materialName: 2
     materialSearch: 2
     materialLocation: 0
   animations:
@@ -16,8 +23,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -484,8 +489,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 0b3da1f3c3be7b14bbbc3e7c0295b0b4,
-    type: 2}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 0b3da1f3c3be7b14bbbc3e7c0295b0b4, type: 2}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
@@ -497,10 +501,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 290679
-  packageName: KayKit - Adventurers Character Pack (for Unity)
-  packageVersion: 1.0
-  assetPath: Assets/KayKit/Characters/KayKit - Adventurers (for Unity)/Models/Characters/druid.fbx
-  uploadId: 678573

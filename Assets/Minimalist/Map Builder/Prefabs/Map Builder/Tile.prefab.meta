@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cb964289e9e4d844daa905758459c003
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215419
+  packageName: Minimalist Map Builder
+  packageVersion: 1.0.2
+  assetPath: Assets/Minimalist/Map Builder/Prefabs/Map Builder/Tile.prefab
+  uploadId: 558645

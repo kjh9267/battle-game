@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 96d611f32853450429af5ae50eb66921
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215419
+  packageName: Minimalist Map Builder
+  packageVersion: 1.0.2
+  assetPath: Assets/Minimalist/Map Builder/Prefabs/Example Maps/Pyramids.prefab
+  uploadId: 558645

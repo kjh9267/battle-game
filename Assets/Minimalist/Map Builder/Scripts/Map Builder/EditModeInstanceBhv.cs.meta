@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d287d14b4e0da434b87b8af5e59eb33f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215419
+  packageName: Minimalist Map Builder
+  packageVersion: 1.0.2
+  assetPath: Assets/Minimalist/Map Builder/Scripts/Map Builder/EditModeInstanceBhv.cs
+  uploadId: 558645
