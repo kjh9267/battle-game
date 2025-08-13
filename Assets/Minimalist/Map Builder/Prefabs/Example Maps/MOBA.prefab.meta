@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f8ee832c4ec0042469621c7df534677e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215419
+  packageName: Minimalist Map Builder
+  packageVersion: 1.0.2
+  assetPath: Assets/Minimalist/Map Builder/Prefabs/Example Maps/MOBA.prefab
+  uploadId: 558645
