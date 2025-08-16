@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e82beb9075fcdd246824f2949d1dc815
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Code/Utilities/ExitGUIUtility.cs
+  uploadId: 756148

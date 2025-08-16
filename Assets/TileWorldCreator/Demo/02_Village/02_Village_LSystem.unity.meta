@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: dbd2f749c8aacf046bb309562471f0c2
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Demo/02_Village/02_Village_LSystem.unity
+  uploadId: 756148

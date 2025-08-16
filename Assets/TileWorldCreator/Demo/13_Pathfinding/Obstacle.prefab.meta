@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6e08661aa8b47b346ac00a128ca749b2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Demo/13_Pathfinding/Obstacle.prefab
+  uploadId: 756148

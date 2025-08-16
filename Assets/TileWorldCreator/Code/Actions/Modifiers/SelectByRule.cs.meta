@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3e368160488478d42a2c8c4c8de4f8f8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Code/Actions/Modifiers/SelectByRule.cs
+  uploadId: 756148

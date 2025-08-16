@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0530285de6621464fb6983bf1ae26b71
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Demo/10_GenerateByTexture/Scripts/AssignTexture.cs
+  uploadId: 756148

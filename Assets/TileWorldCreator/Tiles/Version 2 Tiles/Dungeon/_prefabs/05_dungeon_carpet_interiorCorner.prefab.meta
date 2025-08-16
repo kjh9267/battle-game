@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d27be44b5f64bb14194cdea34f9dd6c4
+timeCreated: 1457017790
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Tiles/Version 2 Tiles/Dungeon/_prefabs/05_dungeon_carpet_interiorCorner.prefab
+  uploadId: 756148

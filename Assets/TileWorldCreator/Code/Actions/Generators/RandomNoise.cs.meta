@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 89d2f7a79cf0b3d4994afa13048f2860
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Code/Actions/Generators/RandomNoise.cs
+  uploadId: 756148

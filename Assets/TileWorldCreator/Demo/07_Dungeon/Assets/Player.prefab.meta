@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e1eee5e5c1ae6184a9cdb06ae3994ada
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Demo/07_Dungeon/Assets/Player.prefab
+  uploadId: 756148

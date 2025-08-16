@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 365dd57b2a648d54a9291104adc12cc4
+timeCreated: 1457017050
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Tiles/Version 2 Tiles/Dungeon/_materials/mat_Dungeon_carpet_fill.mat
+  uploadId: 756148

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 38913003d76d9cf47bc59ce8b9429a25
+timeCreated: 1457017786
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Tiles/Version 2 Tiles/Dungeon/_prefabs/03_dungeon_invertedCornerTile.prefab
+  uploadId: 756148

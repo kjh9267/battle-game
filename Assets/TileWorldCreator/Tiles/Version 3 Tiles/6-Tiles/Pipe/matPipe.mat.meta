@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f564a0f5689a8124a83a5225646d49a5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Tiles/Version 3 Tiles/6-Tiles/Pipe/matPipe.mat
+  uploadId: 756148

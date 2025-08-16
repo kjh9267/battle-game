@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b748f4be2a6c3624ebf4e559a6368785
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Tiles/Version 2 Tiles/Dungeon/_materials/mat_Dungeon_wood.mat
+  uploadId: 756148

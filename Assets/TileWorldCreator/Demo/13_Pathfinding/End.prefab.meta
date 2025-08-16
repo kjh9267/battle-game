@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 70a011f40d30e0944b26f0ed4f72ee08
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Demo/13_Pathfinding/End.prefab
+  uploadId: 756148

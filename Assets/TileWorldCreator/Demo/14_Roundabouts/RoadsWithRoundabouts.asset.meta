@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4fc52dbbc32cfa54391688f16af456f4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Demo/14_Roundabouts/RoadsWithRoundabouts.asset
+  uploadId: 756148

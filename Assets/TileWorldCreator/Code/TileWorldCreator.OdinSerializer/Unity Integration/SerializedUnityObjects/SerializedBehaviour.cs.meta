@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2b7040c93bfa72b37f6526d3b266c3c7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Code/TileWorldCreator.OdinSerializer/Unity Integration/SerializedUnityObjects/SerializedBehaviour.cs
+  uploadId: 756148
