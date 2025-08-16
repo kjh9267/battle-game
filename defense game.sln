@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{79a67e91-994e-a0b4-5522-9130b24aadc4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TileWorldCreator.OdinSerializer", "TileWorldCreator.OdinSerializer.csproj", "{07523cfc-7df5-f0d8-6c58-2f2d841117f3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TileWorldCreator.Editor", "TileWorldCreator.Editor.csproj", "{70d592ab-c210-6cf4-27c1-c1b9b50a4d65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TileWorldCreator", "TileWorldCreator.csproj", "{3ff0c78f-0468-f563-99e6-97f3fc45e0c1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{a141e23d-bf63-8db6-e1b8-5d5b8c9e8765}"
 EndProject
@@ -10,8 +14,12 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{79a67e91-994e-a0b4-5522-9130b24aadc4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79a67e91-994e-a0b4-5522-9130b24aadc4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07523cfc-7df5-f0d8-6c58-2f2d841117f3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07523cfc-7df5-f0d8-6c58-2f2d841117f3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70d592ab-c210-6cf4-27c1-c1b9b50a4d65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70d592ab-c210-6cf4-27c1-c1b9b50a4d65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ff0c78f-0468-f563-99e6-97f3fc45e0c1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ff0c78f-0468-f563-99e6-97f3fc45e0c1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{a141e23d-bf63-8db6-e1b8-5d5b8c9e8765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{a141e23d-bf63-8db6-e1b8-5d5b8c9e8765}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection

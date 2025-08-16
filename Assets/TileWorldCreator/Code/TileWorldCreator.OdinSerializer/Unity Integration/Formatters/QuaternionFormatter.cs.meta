@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7cc1ed44cecd41763b1ebf018a2baf8d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Code/TileWorldCreator.OdinSerializer/Unity Integration/Formatters/QuaternionFormatter.cs
+  uploadId: 756148

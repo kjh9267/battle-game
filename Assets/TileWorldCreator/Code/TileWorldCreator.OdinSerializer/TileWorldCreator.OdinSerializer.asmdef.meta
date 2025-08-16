@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 438e935a418e55c40afee218535d8aec
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Code/TileWorldCreator.OdinSerializer/TileWorldCreator.OdinSerializer.asmdef
+  uploadId: 756148

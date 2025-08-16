@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 18b4473f987ab944bbfa75ed5cb8506b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Code/Actions/Generators/Texture.cs
+  uploadId: 756148

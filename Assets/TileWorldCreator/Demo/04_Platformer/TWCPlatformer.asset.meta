@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 58cf69b7f6a75644392652eb09680d8d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Demo/04_Platformer/TWCPlatformer.asset
+  uploadId: 756148

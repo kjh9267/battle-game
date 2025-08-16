@@ -47,15 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/_Scripts/NavMeshManager.cs" />
-    <Compile Include="Assets/Minimalist/Map Builder/Scripts/Sample Scene/CameraBhv.cs" />
     <Compile Include="Assets/_Scripts/BattleManager.cs" />
-    <Compile Include="Assets/Minimalist/Map Builder/Scripts/Map Builder/MapBuilder.cs" />
     <Compile Include="Assets/_Scripts/Warrior.cs" />
     <Compile Include="Assets/_Scripts/SoldierSpawner.cs" />
-    <Compile Include="Assets/Minimalist/Map Builder/Scripts/Map Builder/EditModeInstanceBhv.cs" />
     <Compile Include="Assets/_Scripts/MapGenerator.cs" />
-    <Compile Include="Assets/Kevin Iglesias/Characters/Humanoid Giant/Demo Scene/Scripts/HumanoidGiantDemo.cs" />
-    <Compile Include="Assets/Minimalist/Map Builder/Scripts/Sample Scene/DirectionalLightBhv.cs" />
+    <None Include="Assets/Toon_RTS/WesternKingdoms/Toon RTS Units - Latest update.txt" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/6000.0.53f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -940,6 +936,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="TileWorldCreator.csproj">
+      <Project>{3ff0c78f-0468-f563-99e6-97f3fc45e0c1}</Project>
+      <Name>TileWorldCreator</Name>
+    </ProjectReference>
+    <ProjectReference Include="TileWorldCreator.OdinSerializer.csproj">
+      <Project>{07523cfc-7df5-f0d8-6c58-2f2d841117f3}</Project>
+      <Name>TileWorldCreator.OdinSerializer</Name>
+    </ProjectReference>
+    <ProjectReference Include="TileWorldCreator.Editor.csproj">
+      <Project>{70d592ab-c210-6cf4-27c1-c1b9b50a4d65}</Project>
+      <Name>TileWorldCreator.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

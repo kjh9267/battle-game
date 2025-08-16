@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 668f754e571b8df4fa26cdd25d6cd210
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Demo/10_GenerateByTexture/10_GenerateByTextureDemo.unity
+  uploadId: 756148

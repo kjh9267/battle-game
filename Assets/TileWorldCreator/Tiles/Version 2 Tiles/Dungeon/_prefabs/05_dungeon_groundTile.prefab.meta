@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 74dbfb289f0493644846211f4d605583
+timeCreated: 1457017790
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Tiles/Version 2 Tiles/Dungeon/_prefabs/05_dungeon_groundTile.prefab
+  uploadId: 756148

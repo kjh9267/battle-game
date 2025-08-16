@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 657e0805a47f2884f9dce42573e06589
+timeCreated: 1426427327
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Tiles/Version 2 Tiles/SciFi/_prefabs/layer1/01_tile_A_wall.prefab
+  uploadId: 756148

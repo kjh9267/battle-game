@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 4a425062992e35f45961d19f691e985d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Demo/07_Dungeon/Scripts/DungeonGameManager.cs
+  uploadId: 756148

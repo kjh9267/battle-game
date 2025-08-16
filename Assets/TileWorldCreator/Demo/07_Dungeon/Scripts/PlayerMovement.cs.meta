@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6c9d887c49908034bb21512ffc0a2264
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Demo/07_Dungeon/Scripts/PlayerMovement.cs
+  uploadId: 756148

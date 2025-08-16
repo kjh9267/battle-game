@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fb48ca509acc20445ba9b7a7bef7ad07
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Demo/11_MixTilesets/11_MixTilesets.unity
+  uploadId: 756148

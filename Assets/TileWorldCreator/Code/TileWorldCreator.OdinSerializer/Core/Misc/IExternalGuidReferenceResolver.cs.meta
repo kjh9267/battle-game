@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3cc14f26fa01667038fe38d09757aec5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Code/TileWorldCreator.OdinSerializer/Core/Misc/IExternalGuidReferenceResolver.cs
+  uploadId: 756148

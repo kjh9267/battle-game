@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e8a7101e258498a25dc4bb59cd1f5519
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Code/TileWorldCreator.OdinSerializer/Core/FormatterLocators/FormatterLocator.cs
+  uploadId: 756148

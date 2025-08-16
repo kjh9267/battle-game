@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a13d1c3ac692312498d41127185bad59
+timeCreated: 1426426701
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Tiles/Version 2 Tiles/SciFi/_materials/tileC_wall/matTileCWall.mat
+  uploadId: 756148

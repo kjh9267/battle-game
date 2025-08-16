@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 00b85e94e22280e4e80941f31ac4b321
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Demo/13_Pathfinding/13_Pathfinding_B.unity
+  uploadId: 756148

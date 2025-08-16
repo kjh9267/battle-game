@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 78a588ceb49564243b9af3598198a6e2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: ea4330b70ec4bd3449d1eff37ecc9fb5, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Code/TileWorldCreator4TilesPreset.cs
+  uploadId: 756148

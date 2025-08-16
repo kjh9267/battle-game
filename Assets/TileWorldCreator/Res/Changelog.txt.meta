@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d11302ea35a22d14eb59abf35191f84d
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Res/Changelog.txt
+  uploadId: 756148

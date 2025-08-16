@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c8519a2d70b1b1b4c96d8cdaea0ee577
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 199383
+  packageName: TileWorldCreator 3
+  packageVersion: 3.5.6
+  assetPath: Assets/TileWorldCreator/Code/Actions/Instantiation/InstantiateTiles.cs
+  uploadId: 756148
