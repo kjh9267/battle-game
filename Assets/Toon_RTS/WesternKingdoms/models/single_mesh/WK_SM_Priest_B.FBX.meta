@@ -1,7 +1,14 @@
 fileFormatVersion: 2
 guid: a9a65e2b399f86a488299c979522d15a
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67948
+  packageName: Toon RTS Units
+  packageVersion: 1.3
+  assetPath: Assets/Toon_RTS/WesternKingdoms/models/single_mesh/WK_SM_Priest_B.FBX
+  uploadId: 370312
 ModelImporter:
-  serializedVersion: 26
+  serializedVersion: 22200
   internalIDToNameTable:
   - first:
       1: 100000
@@ -740,9 +747,9 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: WK_Standard_Units
-    second: {fileID: 2100000, guid: c805af27b738e394989b29f718f5c17e, type: 2}
+    second: {fileID: 2100000, guid: dc851844264c22f4c81c45df6c05894f, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 1
     materialSearch: 1
     materialLocation: 1
@@ -751,9 +758,8 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -776,26 +782,35 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 0
     importBlendShapes: 0
     importCameras: 0
     importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
+    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -806,7 +821,6 @@ ModelImporter:
     normalSmoothingSource: 0
   referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
     serializedVersion: 3
     human:
@@ -1099,20 +1113,17 @@ ModelImporter:
     - name: WK_Shield_A
       parentName: L_shield_container
       position: {x: -0.000000048446655, y: -0.000000024223327, z: -0.00000009689331}
-      rotation: {x: -0.00000011920925, y: 0.00000011222447, z: -0.00000003143215,
-        w: 1}
+      rotation: {x: -0.00000011920925, y: 0.00000011222447, z: -0.00000003143215, w: 1}
       scale: {x: 0.9999991, y: 1.0000002, z: 1.0000006}
     - name: WK_Shield_B
       parentName: L_shield_container
       position: {x: -0, y: 0, z: -0.00000009689331}
-      rotation: {x: -0.00000014901158, y: 0.0000000339933, z: 0.0000000072177606,
-        w: 1}
+      rotation: {x: -0.00000014901158, y: 0.0000000339933, z: 0.0000000072177606, w: 1}
       scale: {x: 0.9999992, y: 1.0000001, z: 1.0000008}
     - name: WK_Shield_C
       parentName: L_shield_container
       position: {x: 0.000000048446655, y: 0.000000024223327, z: -0.00000009689331}
-      rotation: {x: -0.0000001043081, y: 0.00000007217756, z: -0.000000033993295,
-        w: 1}
+      rotation: {x: -0.0000001043081, y: 0.00000007217756, z: -0.000000033993295, w: 1}
       scale: {x: 0.9999992, y: 1.0000002, z: 1.0000006}
     - name: WK_Shield_D
       parentName: L_shield_container
@@ -1162,50 +1173,42 @@ ModelImporter:
     - name: WK_weapon_axe_A
       parentName: R_hand_container
       position: {x: -0, y: 0.00000038757324, z: -0.000000048446655}
-      rotation: {x: 0.000000027118125, y: -0.00000007118509, z: -0.000000016948828,
-        w: 1}
+      rotation: {x: 0.000000027118125, y: -0.00000007118509, z: -0.000000016948828, w: 1}
       scale: {x: 4.395926, y: 4.395926, z: 4.395927}
     - name: WK_weapon_axe_B
       parentName: R_hand_container
       position: {x: -0, y: 0.00000038757324, z: -0.00000019378662}
-      rotation: {x: 0.000000027118125, y: -0.00000007118509, z: -0.000000016948828,
-        w: 1}
+      rotation: {x: 0.000000027118125, y: -0.00000007118509, z: -0.000000016948828, w: 1}
       scale: {x: 4.395926, y: 4.395926, z: 4.395927}
     - name: WK_weapon_hammer_A
       parentName: R_hand_container
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.000000027118125, y: -0.00000007118509, z: -0.000000016948828,
-        w: 1}
+      rotation: {x: 0.000000027118125, y: -0.00000007118509, z: -0.000000016948828, w: 1}
       scale: {x: 4.395926, y: 4.395926, z: 4.395927}
     - name: WK_weapon_hammer_B
       parentName: R_hand_container
       position: {x: -0.000000048446655, y: 0.00000038757324, z: 0.0000003391266}
-      rotation: {x: 0.000000027118125, y: -0.00000007118509, z: -0.000000016948828,
-        w: 1}
+      rotation: {x: 0.000000027118125, y: -0.00000007118509, z: -0.000000016948828, w: 1}
       scale: {x: 4.395926, y: 4.395926, z: 4.395927}
     - name: WK_weapon_pick
       parentName: R_hand_container
       position: {x: -0.000000048446655, y: 0, z: 0}
-      rotation: {x: 0.000000027118125, y: -0.00000007118509, z: -0.000000016948828,
-        w: 1}
+      rotation: {x: 0.000000027118125, y: -0.00000007118509, z: -0.000000016948828, w: 1}
       scale: {x: 4.395926, y: 4.395926, z: 4.395927}
     - name: WK_weapon_spear
       parentName: R_hand_container
       position: {x: -0, y: 0, z: 0.00000038757324}
-      rotation: {x: -0.00000002711813, y: -0.00000003389766, z: -0.000000105082755,
-        w: 1}
+      rotation: {x: -0.00000002711813, y: -0.00000003389766, z: -0.000000105082755, w: 1}
       scale: {x: 4.3959255, y: 4.395926, z: 4.395927}
     - name: WK_weapon_sword_A
       parentName: R_hand_container
       position: {x: -0.00000014533997, y: 0, z: 0.0000007751465}
-      rotation: {x: -0.00000002711813, y: -0.00000003389766, z: -0.000000105082755,
-        w: 1}
+      rotation: {x: -0.00000002711813, y: -0.00000003389766, z: -0.000000105082755, w: 1}
       scale: {x: 4.3959255, y: 4.395926, z: 4.395927}
     - name: WK_weapon_sword_B
       parentName: R_hand_container
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.00000002711813, y: -0.00000003389766, z: -0.000000105082755,
-        w: 1}
+      rotation: {x: -0.00000002711813, y: -0.00000003389766, z: -0.000000105082755, w: 1}
       scale: {x: 4.3959255, y: 4.395926, z: 4.395927}
     - name: Bone_bag
       parentName: Bip001 Spine
@@ -1365,16 +1368,14 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 67948
-  packageName: Toon RTS Units
-  packageVersion: 1.3
-  assetPath: Assets/Toon_RTS/WesternKingdoms/models/single_mesh/WK_SM_Priest_B.FBX
-  uploadId: 370312
