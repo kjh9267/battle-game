@@ -619,6 +619,39 @@
     <Reference Include="Mono.Cecil">
       <HintPath>/Users/junho/projects/defense game/Library/PackageCache/com.unity.nuget.mono-cecil@d6f9955a5d5f/Mono.Cecil.dll</HintPath>
     </Reference>
+    <Reference Include="Google.VersionHandlerImpl">
+      <HintPath>/Users/junho/projects/defense game/Assets/ExternalDependencyManager/Editor/1.2.186/Google.VersionHandlerImpl.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.IOSResolver">
+      <HintPath>/Users/junho/projects/defense game/Assets/ExternalDependencyManager/Editor/1.2.186/Google.IOSResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Common">
+      <HintPath>/Users/junho/projects/defense game/Assets/GoogleMobileAds/GoogleMobileAds.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver">
+      <HintPath>/Users/junho/projects/defense game/Assets/ExternalDependencyManager/Editor/1.2.186/Google.JarResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds">
+      <HintPath>/Users/junho/projects/defense game/Assets/GoogleMobileAds/GoogleMobileAds.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Unity">
+      <HintPath>/Users/junho/projects/defense game/Assets/GoogleMobileAds/GoogleMobileAds.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandler">
+      <HintPath>/Users/junho/projects/defense game/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Core">
+      <HintPath>/Users/junho/projects/defense game/Assets/GoogleMobileAds/GoogleMobileAds.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Ump.Unity">
+      <HintPath>/Users/junho/projects/defense game/Assets/GoogleMobileAds/GoogleMobileAds.Ump.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.PackageManagerResolver">
+      <HintPath>/Users/junho/projects/defense game/Assets/ExternalDependencyManager/Editor/1.2.186/Google.PackageManagerResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Ump">
+      <HintPath>/Users/junho/projects/defense game/Assets/GoogleMobileAds/GoogleMobileAds.Ump.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/6000.0.53f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>

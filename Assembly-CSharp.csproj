@@ -46,11 +46,14 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.53f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/_Scripts/NavMeshManager.cs" />
-    <Compile Include="Assets/_Scripts/BattleManager.cs" />
+    <Compile Include="Assets/_Scripts/Arrow.cs" />
     <Compile Include="Assets/_Scripts/Warrior.cs" />
-    <Compile Include="Assets/_Scripts/SoldierSpawner.cs" />
-    <Compile Include="Assets/_Scripts/MapGenerator.cs" />
+    <Compile Include="Assets/_Scripts/MapManager.cs" />
+    <Compile Include="Assets/_Scripts/GameManager.cs" />
+    <Compile Include="Assets/_Scripts/WarriorPlacement.cs" />
+    <Compile Include="Assets/_Scripts/InterstitialAdManager.cs" />
+    <None Include="Assets/GoogleMobileAds/GoogleMobileAds_version-10.3.0_manifest.txt" />
+    <None Include="Assets/GoogleMobileAds/link.xml" />
     <None Include="Assets/Toon_RTS/WesternKingdoms/Toon RTS Units - Latest update.txt" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/6000.0.53f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -402,6 +405,24 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>/Users/junho/projects/defense game/Library/PackageCache/com.unity.nuget.mono-cecil@d6f9955a5d5f/Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Common">
+      <HintPath>/Users/junho/projects/defense game/Assets/GoogleMobileAds/GoogleMobileAds.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds">
+      <HintPath>/Users/junho/projects/defense game/Assets/GoogleMobileAds/GoogleMobileAds.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Unity">
+      <HintPath>/Users/junho/projects/defense game/Assets/GoogleMobileAds/GoogleMobileAds.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Core">
+      <HintPath>/Users/junho/projects/defense game/Assets/GoogleMobileAds/GoogleMobileAds.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Ump.Unity">
+      <HintPath>/Users/junho/projects/defense game/Assets/GoogleMobileAds/GoogleMobileAds.Ump.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Ump">
+      <HintPath>/Users/junho/projects/defense game/Assets/GoogleMobileAds/GoogleMobileAds.Ump.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/6000.0.53f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -936,6 +957,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="GoogleMobileAds.Editor.csproj">
+      <Project>{a2998981-0b78-51a6-1afb-3e7ed11611d9}</Project>
+      <Name>GoogleMobileAds.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="TileWorldCreator.csproj">
       <Project>{3ff0c78f-0468-f563-99e6-97f3fc45e0c1}</Project>
       <Name>TileWorldCreator</Name>
