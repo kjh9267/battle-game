@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class UnitPlacement : MonoBehaviour
+public class WarriorPlacementManager : MonoBehaviour
 {
     private Camera mainCamera;
     private bool isDragging = false;
@@ -35,17 +35,14 @@ public class UnitPlacement : MonoBehaviour
     {
         if (!isDragging) return;
 
-        Plane plane = new Plane(Vector3.up, 0f);
+        // 카메라에서 현재 마우스/터치 위치로 레이 쏘기
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
 
-        if (plane.Raycast(ray, out float enter))
+        // 타일 위에 드래그 되도록 처리
+        if (Physics.Raycast(ray, out RaycastHit hit, 100f, tileLayer))
         {
-            Vector3 hitPoint = ray.GetPoint(enter) + offset;
-
-            if (Physics.Raycast(hitPoint + Vector3.up * 5f, Vector3.down, out RaycastHit hit, 10f, tileLayer))
-            {
-                transform.position = hit.point;
-            }
+            // 병사가 마우스를 따라가도록 위치 갱신
+            transform.position = hit.point + Vector3.up * 0.1f; // 살짝 띄워 보이게
         }
     }
 
@@ -54,7 +51,7 @@ public class UnitPlacement : MonoBehaviour
         isDragging = false;
 
         // 같은 팀 병사 확인
-        GameObject[] teamUnits = GameObject.FindGameObjectsWithTag("TeamA"); // 필요에 따라 태그 변경
+        GameObject[] teamUnits = GameObject.FindGameObjectsWithTag("TeamA"); // 필요 시 태그 변경
         foreach (var unit in teamUnits)
         {
             if (unit != gameObject && Vector3.Distance(unit.transform.position, transform.position) < 0.1f)
@@ -67,6 +64,6 @@ public class UnitPlacement : MonoBehaviour
             }
         }
 
-        // 아무도 없으면 드래그한 위치 그대로
+        // 아무도 없으면 드래그한 위치 그대로 두기
     }
 }

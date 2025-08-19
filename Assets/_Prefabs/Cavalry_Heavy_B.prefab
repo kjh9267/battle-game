@@ -1135,6 +1135,8 @@ GameObject:
   - component: {fileID: 3057693763644551456}
   - component: {fileID: -1221705836737545655}
   - component: {fileID: -8218498453201160224}
+  - component: {fileID: -6172595421268660794}
+  - component: {fileID: 3429804829437190432}
   m_Layer: 0
   m_Name: Cavalry_Heavy_B
   m_TagString: TeamB
@@ -1191,7 +1193,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 7
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -1216,12 +1218,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyTag: 
-  attackRange: 3.25
+  attackRange: 2.5
   attackCooldown: 1
   damage: 1
-  detectionRange: 15
+  arrowPrefab: {fileID: 0}
+  isArcher: 0
   maxHealth: 10
-  currentHealth: 0
+  currentHealth: 10
+--- !u!136 &-6172595421268660794
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7063231334646965751}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &3429804829437190432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7063231334646965751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c869fa73a1143ee9b83e0ce46ba7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: -8218498453201160224}
+  sliderPrefab: {fileID: 6661438202183519224, guid: e3647b4014b154f9e97779827e9cd4cf, type: 3}
+  worldOffset: {x: 0, y: 3, z: 0}
 --- !u!1 &7440163532362973187
 GameObject:
   m_ObjectHideFlags: 0

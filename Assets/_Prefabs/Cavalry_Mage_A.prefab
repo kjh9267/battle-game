@@ -3905,6 +3905,8 @@ GameObject:
   - component: {fileID: 571349260466842880}
   - component: {fileID: -4484202682601627782}
   - component: {fileID: 2495595854815672592}
+  - component: {fileID: 1859880804400439870}
+  - component: {fileID: -171563283948017170}
   m_Layer: 0
   m_Name: Cavalry_Mage_A
   m_TagString: TeamA
@@ -3963,7 +3965,7 @@ Animator:
   m_GameObject: {fileID: 571349260459548536}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 26b0b465439dcd84cb4971737ab4b8ca, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e7e49634ddb4841c099ae9eee6a075ca, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3985,7 +3987,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 7
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -4010,12 +4012,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyTag: 
-  attackRange: 1
+  attackRange: 2.5
   attackCooldown: 1
   damage: 1
-  detectionRange: 15
+  arrowPrefab: {fileID: 0}
+  isArcher: 0
   maxHealth: 10
-  currentHealth: 0
+  currentHealth: 10
+--- !u!136 &1859880804400439870
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571349260459548536}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &-171563283948017170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571349260459548536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c869fa73a1143ee9b83e0ce46ba7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2495595854815672592}
+  sliderPrefab: {fileID: 6661438202183519224, guid: 0080698289b6047efaee2b883521fd1d, type: 3}
+  worldOffset: {x: 0, y: 3, z: 0}
 --- !u!1 &571349260459548540
 GameObject:
   m_ObjectHideFlags: 0

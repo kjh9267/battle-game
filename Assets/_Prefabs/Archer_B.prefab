@@ -471,6 +471,8 @@ GameObject:
   - component: {fileID: 2929859820652794507}
   - component: {fileID: -3515372573362759672}
   - component: {fileID: -92079779746572343}
+  - component: {fileID: 2173624086099860856}
+  - component: {fileID: 3856796771353523112}
   m_Layer: 0
   m_Name: Archer_B
   m_TagString: TeamB
@@ -559,6 +561,44 @@ MonoBehaviour:
   isArcher: 1
   maxHealth: 10
   currentHealth: 10
+--- !u!136 &2173624086099860856
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092156390723507449}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &3856796771353523112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092156390723507449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c869fa73a1143ee9b83e0ce46ba7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: -92079779746572343}
+  sliderPrefab: {fileID: 6661438202183519224, guid: e3647b4014b154f9e97779827e9cd4cf, type: 3}
+  worldOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &5812451835275033353
 GameObject:
   m_ObjectHideFlags: 0

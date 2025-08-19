@@ -1150,6 +1150,8 @@ GameObject:
   - component: {fileID: 1137340246065835003}
   - component: {fileID: -1167641615931669055}
   - component: {fileID: -6038641313127224173}
+  - component: {fileID: -7872238487368211196}
+  - component: {fileID: -2022551016623921836}
   m_Layer: 0
   m_Name: Heavy_Infantry_A
   m_TagString: TeamA
@@ -1206,7 +1208,7 @@ Animator:
   m_GameObject: {fileID: 1137340246058539085}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 635180035812f964db1d9529cbb170f2, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bd831b3398e05424aa32c5197b50b36a, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1253,12 +1255,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyTag: 
-  attackRange: 1
+  attackRange: 1.5
   attackCooldown: 1
   damage: 1
-  detectionRange: 15
+  arrowPrefab: {fileID: 0}
+  isArcher: 0
   maxHealth: 10
-  currentHealth: 0
+  currentHealth: 10
+--- !u!136 &-7872238487368211196
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137340246058539085}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &-2022551016623921836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137340246058539085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c869fa73a1143ee9b83e0ce46ba7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: -6038641313127224173}
+  sliderPrefab: {fileID: 6661438202183519224, guid: 0080698289b6047efaee2b883521fd1d, type: 3}
+  worldOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1137340246058539087
 GameObject:
   m_ObjectHideFlags: 0
