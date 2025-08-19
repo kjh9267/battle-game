@@ -6,7 +6,7 @@ public class Warrior : MonoBehaviour
 {
     [Header("Unit Settings")]
     public string enemyTag = "";           // 적군 태그
-    public float attackRange = 3.25f;         // 공격 범위
+    public float attackRange = 2.5f;         // 공격 범위
     public float attackCooldown = 1f;      // 공격 간격
     public int damage = 1;
     public Arrow arrowPrefab;
@@ -31,7 +31,7 @@ public class Warrior : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
-        agent.obstacleAvoidanceType = ObstacleAvoidanceType.LowQualityObstacleAvoidance;
+        agent.obstacleAvoidanceType = ObstacleAvoidanceType.HighQualityObstacleAvoidance;
         agent.stoppingDistance = attackRange;
         currentHealth = maxHealth;
 
@@ -53,8 +53,6 @@ public class Warrior : MonoBehaviour
 
     private IEnumerator CombatRoutine()
     {
-        WaitForSeconds wait = new WaitForSeconds(0.25f);
-
         while (true)
         {
             if (isDead) yield break;
@@ -92,7 +90,7 @@ public class Warrior : MonoBehaviour
                 anim.SetBool(_isMoving, false);
             }
 
-            yield return wait;
+            yield return null;
         }
     }
 

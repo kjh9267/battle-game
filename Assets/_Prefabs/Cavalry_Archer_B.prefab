@@ -269,6 +269,8 @@ GameObject:
   - component: {fileID: 2634851995851208790}
   - component: {fileID: 6132466748265255187}
   - component: {fileID: -4594407645808551068}
+  - component: {fileID: -6661665446311588250}
+  - component: {fileID: -1908157514136157029}
   m_Layer: 0
   m_Name: Cavalry_Archer_B
   m_TagString: TeamB
@@ -325,7 +327,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 7
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -356,7 +358,45 @@ MonoBehaviour:
   arrowPrefab: {fileID: 1143138135722538143, guid: a77abc7a03213487b83f1214467293e5, type: 3}
   isArcher: 1
   maxHealth: 10
-  currentHealth: 0
+  currentHealth: 10
+--- !u!136 &-6661665446311588250
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2617138565751631789}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &-1908157514136157029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2617138565751631789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c869fa73a1143ee9b83e0ce46ba7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: -4594407645808551068}
+  sliderPrefab: {fileID: 6661438202183519224, guid: e3647b4014b154f9e97779827e9cd4cf, type: 3}
+  worldOffset: {x: 0, y: 3, z: 0}
 --- !u!1 &2982420341916190897
 GameObject:
   m_ObjectHideFlags: 0

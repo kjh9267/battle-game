@@ -1700,6 +1700,8 @@ GameObject:
   - component: {fileID: 1632868360571729066}
   - component: {fileID: -6878389238681758211}
   - component: {fileID: 460098889394677200}
+  - component: {fileID: -3051141051454202122}
+  - component: {fileID: -1208150833050240351}
   m_Layer: 0
   m_Name: Spearman_A
   m_TagString: TeamA
@@ -1756,7 +1758,7 @@ Animator:
   m_GameObject: {fileID: 1632868360562362140}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 635180035812f964db1d9529cbb170f2, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bd831b3398e05424aa32c5197b50b36a, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1803,12 +1805,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyTag: 
-  attackRange: 1
+  attackRange: 1.5
   attackCooldown: 1
   damage: 1
-  detectionRange: 15
+  arrowPrefab: {fileID: 0}
+  isArcher: 0
   maxHealth: 10
-  currentHealth: 0
+  currentHealth: 10
+--- !u!136 &-3051141051454202122
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632868360562362140}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &-1208150833050240351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632868360562362140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c869fa73a1143ee9b83e0ce46ba7fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 460098889394677200}
+  sliderPrefab: {fileID: 6661438202183519224, guid: 0080698289b6047efaee2b883521fd1d, type: 3}
+  worldOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1632868360562362142
 GameObject:
   m_ObjectHideFlags: 0
