@@ -16,8 +16,6 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 0}
-    - {fileID: 0}
     - {fileID: 176950, guid: fc406560e24dc8c4fbd98e85057ca1f6, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -14550,11 +14548,11 @@ MonoBehaviour:
       Entry: 3
       Data: 0
     - Name: tileWorldCreator
-      Entry: 10
-      Data: 0
+      Entry: 6
+      Data: 
     - Name: paintPreviewTexture
-      Entry: 10
-      Data: 1
+      Entry: 6
+      Data: 
     - Name: registeredToSceneView
       Entry: 5
       Data: true
@@ -14621,7 +14619,7 @@ MonoBehaviour:
       Data: false
     - Name: prefab
       Entry: 10
-      Data: 2
+      Data: 0
     - Name: instantiateChilds
       Entry: 5
       Data: false

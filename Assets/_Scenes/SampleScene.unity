@@ -771,10 +771,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   unitLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
 --- !u!4 &1885117721
 Transform:
   m_ObjectHideFlags: 0

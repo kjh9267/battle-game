@@ -3907,7 +3907,7 @@ GameObject:
   - component: {fileID: 2495595854815672592}
   - component: {fileID: 1859880804400439870}
   - component: {fileID: -171563283948017170}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cavalry_Mage_A
   m_TagString: TeamA
   m_Icon: {fileID: 0}
