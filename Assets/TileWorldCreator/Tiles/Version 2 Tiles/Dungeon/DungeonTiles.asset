@@ -28,7 +28,7 @@ MonoBehaviour:
   edgeTile: {fileID: 147874, guid: cef6d6f293eea8e4cb4bc56c70e01bed, type: 3}
   exteriorCornerTile: {fileID: 125366, guid: 40a06593a104acb4d8072109c21ac1e2, type: 3}
   interiorCornerTile: {fileID: 157658, guid: 38913003d76d9cf47bc59ce8b9429a25, type: 3}
-  fillTile: {fileID: 149936, guid: bd551eea26874c845bc3a7f442fceac8, type: 3}
+  fillTile: {fileID: 4470784754894461246, guid: 62e9176f48f7a41f58d7171abc060995, type: 3}
   edgeTileRotationOffset: {x: 0, y: 90, z: 0}
   exteriorCornerTileRotationOffset: {x: 0, y: 90, z: 0}
   interiorCornerTileRotationOffset: {x: 0, y: 90, z: 0}

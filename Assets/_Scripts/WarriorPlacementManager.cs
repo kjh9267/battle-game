@@ -50,20 +50,27 @@ public class WarriorPlacementManager : MonoBehaviour
     {
         isDragging = false;
 
-        // 같은 팀 병사 확인
-        GameObject[] teamUnits = GameObject.FindGameObjectsWithTag("TeamA"); // 필요 시 태그 변경
-        foreach (var unit in teamUnits)
+        // 유닛이 있는지 확인
+        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit unitHit, 100f, unitLayer))
         {
-            if (unit != gameObject && Vector3.Distance(unit.transform.position, transform.position) < 0.1f)
+            Debug.Log("다른 유닛 위에 놓음: " + unitHit.collider.name);
+
+            // 예: 교환 로직 실행
+            GameObject otherUnit = unitHit.collider.gameObject;
+            if (otherUnit != gameObject)
             {
-                // 다른 병사와 위치 교환
-                Vector3 otherPosition = unit.transform.position;
-                unit.transform.position = originalPosition;
+                Vector3 otherPosition = otherUnit.transform.position;
+                otherUnit.transform.position = originalPosition;
                 transform.position = otherPosition;
-                return;
             }
+            return;
         }
 
-        // 아무도 없으면 드래그한 위치 그대로 두기
+        // 타일 위에 놓기
+        if (Physics.Raycast(ray, out RaycastHit tileHit, 100f, tileLayer))
+        {
+            transform.position = tileHit.point + Vector3.up * 0.1f;
+        }
     }
 }
