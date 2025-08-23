@@ -1850,7 +1850,7 @@ GameObject:
   - component: {fileID: 6278016355820223896}
   - component: {fileID: -7263216929337493299}
   - component: {fileID: 4087284361331517067}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Archer_A
   m_TagString: TeamA
   m_Icon: {fileID: 0}

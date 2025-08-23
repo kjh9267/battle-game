@@ -2914,7 +2914,7 @@ GameObject:
   - component: {fileID: 136790752018825931}
   - component: {fileID: 2738972247310677921}
   - component: {fileID: -6938485492336841360}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cavalry_Archer_A
   m_TagString: TeamA
   m_Icon: {fileID: 0}
