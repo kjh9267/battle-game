@@ -46,12 +46,13 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.53f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/_Scripts/WarriorPlacementManager.cs" />
     <Compile Include="Assets/_Scripts/Arrow.cs" />
+    <Compile Include="Assets/_Scripts/CameraManager.cs" />
     <Compile Include="Assets/_Scripts/Warrior.cs" />
     <Compile Include="Assets/_Scripts/MapManager.cs" />
     <Compile Include="Assets/_Scripts/GameManager.cs" />
     <Compile Include="Assets/_Scripts/HealthBar.cs" />
+    <Compile Include="Assets/_Scripts/WarriorPlacement.cs" />
     <Compile Include="Assets/_Scripts/InterstitialAdManager.cs" />
     <None Include="Assets/GoogleMobileAds/GoogleMobileAds_version-10.3.0_manifest.txt" />
     <None Include="Assets/GoogleMobileAds/link.xml" />
