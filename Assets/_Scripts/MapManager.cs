@@ -1,24 +1,50 @@
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections.Generic;
 
 public class MapManager : MonoBehaviour
 {
-    public GameObject mapPrefab;
-    public NavMeshData navMeshDataAsset;
+    [System.Serializable]
+    public class MapData
+    {
+        public string name;
+        public GameObject prefab;
+        public NavMeshData navMeshData;
+    }
+
+    public List<MapData> maps = new List<MapData>();
 
     private GameObject currentMapInstance;
     private NavMeshDataInstance navMeshDataInstance;
 
-    public void LoadMap()
+    public static MapManager Instance { get; private set; }
+
+    void Awake() {
+        if (Instance == null) {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        } else {
+            Destroy(gameObject);
+        }
+    }
+
+    public void LoadMap(string mapName)
     {
-        // 기존 맵과 NavMesh 제거
         UnloadMap();
 
-        // 맵 생성
-        currentMapInstance = Instantiate(mapPrefab);
+        // 원하는 맵 검색
+        MapData map = maps.Find(m => m.name == mapName);
+        if (map == null) {
+            Debug.LogError($"Map '{mapName}' not found!");
+            return;
+        }
 
-        // NavMeshDataInstance 생성
-        navMeshDataInstance = NavMesh.AddNavMeshData(navMeshDataAsset);
+        // 맵 생성
+        currentMapInstance = Instantiate(map.prefab);
+
+        // NavMeshData 적용
+        if (map.navMeshData != null)
+            navMeshDataInstance = NavMesh.AddNavMeshData(map.navMeshData);
     }
 
     public void UnloadMap()
