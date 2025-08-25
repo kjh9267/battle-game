@@ -185,5 +185,6 @@ public class Warrior : MonoBehaviour
     public void OnDieAnimationEnd()
     {
         Destroy(gameObject);
+        Destroy(arrowInstance.gameObject);
     }
 }
