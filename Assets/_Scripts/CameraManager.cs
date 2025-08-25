@@ -8,52 +8,66 @@ public class CameraManager : MonoBehaviour
 {
     [Header("Target / Orbit")]
     public Transform target;
-    public float minPitch = -80f;
-    public float maxPitch = 80f;
+    public Transform zoomTarget;
 
     [Header("Speeds")]
-    public float rotationSpeed = 0.2f; // 픽셀당 각도
-    public float zoomSpeed = 0.02f;    // 입력 스케일
+    public float rotationSpeed = 0.1f;
+    public float zoomSpeed = 1f;
 
     [Header("Zoom Limits")]
-    public float minDistance = 5f;
-    public float maxDistance = 20f;
+    public float minOrthoSize = 5f;
+    public float maxOrthoSize = 19f;
+
+    [Header("View Angle")]
+    public float fixedPitch = 30f;
 
     private float yaw;
-    private float pitch;
-    private float distance;
+    private Vector3 startZoomTargetPos;
 
 #if UNITY_EDITOR
     private Vector2 lastMousePos;
     private bool leftDragging;
-    private bool rightDragging;
 #endif
+    
+    public static CameraManager Instance { get; private set; }
+    private Camera cam;
 
-    void OnEnable()
+    void Awake()
     {
-        EnhancedTouchSupport.Enable(); // 모바일 터치 활성화
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else Destroy(gameObject);
+
+        cam = GetComponent<Camera>();
+        if (cam == null) cam = gameObject.AddComponent<Camera>();
+        cam.orthographic = true;
     }
 
-    void OnDisable()
-    {
-        EnhancedTouchSupport.Disable();
-    }
+    void OnEnable() => EnhancedTouchSupport.Enable();
+    void OnDisable() => EnhancedTouchSupport.Disable();
 
     void Start()
     {
         if (target == null)
         {
-            var go = new GameObject("CameraTarget");
+            GameObject go = new GameObject("CameraTarget");
             go.transform.position = Vector3.zero;
             target = go.transform;
         }
 
-        Vector3 toCam = transform.position - target.position;
-        distance = Mathf.Clamp(toCam.magnitude, minDistance, maxDistance);
+        if (zoomTarget == null)
+        {
+            GameObject go = new GameObject("ZoomTarget");
+            go.transform.position = target.position;
+            zoomTarget = go.transform;
+        }
 
-        Vector3 dir = toCam.normalized;
-        yaw   = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
-        pitch = Mathf.Asin(dir.y) * Mathf.Rad2Deg;
+        startZoomTargetPos = zoomTarget.position;
+
+        cam.orthographicSize = Mathf.Clamp(cam.orthographicSize, minOrthoSize, maxOrthoSize);
 
         ApplyCameraTransform();
     }
@@ -65,52 +79,44 @@ public class CameraManager : MonoBehaviour
 #else
         UpdateTouchInput();
 #endif
+        // orthographicSize가 최대일 때 zoomTarget을 시작 위치로 이동
+        if (Mathf.Approximately(cam.orthographicSize, maxOrthoSize))
+        {
+            zoomTarget.position = startZoomTargetPos;
+        }
+        
         ApplyCameraTransform();
     }
 
-    // ==========================
-    // 모바일 터치
-    // ==========================
     void UpdateTouchInput()
     {
         var touches = Touch.activeTouches;
 
         if (touches.Count == 1)
         {
-            // 한손 회전
             RotateFromDelta(touches[0].delta);
         }
         else if (touches.Count >= 2)
         {
-            // 두손 핀치 줌
-            var t0 = touches[0];
-            var t1 = touches[1];
+            Vector2 p0 = touches[0].screenPosition;
+            Vector2 p1 = touches[1].screenPosition;
+            Vector2 p0Prev = p0 - touches[0].delta;
+            Vector2 p1Prev = p1 - touches[1].delta;
 
-            Vector2 p0 = t0.screenPosition;
-            Vector2 p1 = t1.screenPosition;
-            Vector2 p0Prev = p0 - t0.delta;
-            Vector2 p1Prev = p1 - t1.delta;
+            float diff = Vector2.Distance(p0, p1) - Vector2.Distance(p0Prev, p1Prev);
+            Vector2 pinchCenter = (p0 + p1) * 0.5f;
 
-            float prevDist = Vector2.Distance(p0Prev, p1Prev);
-            float curDist  = Vector2.Distance(p0, p1);
-            float diff = curDist - prevDist;
-
-            Zoom(diff * zoomSpeed);
+            ZoomAtScreenPosition(-diff * zoomSpeed * 0.1f, pinchCenter);
         }
     }
 
 #if UNITY_EDITOR
-    // ==========================
-    // 에디터용 마우스 시뮬레이션
-    // ==========================
     void UpdateEditorInput()
     {
         var mouse = Mouse.current;
         if (mouse == null) return;
-
         Vector2 pos = mouse.position.ReadValue();
 
-        // --- 왼쪽 버튼: 회전 ---
         if (mouse.leftButton.wasPressedThisFrame)
         {
             leftDragging = true;
@@ -118,57 +124,46 @@ public class CameraManager : MonoBehaviour
         }
         if (mouse.leftButton.isPressed && leftDragging)
         {
-            Vector2 delta = pos - lastMousePos;
-            RotateFromDelta(delta);
+            RotateFromDelta(pos - lastMousePos);
             lastMousePos = pos;
         }
-        if (mouse.leftButton.wasReleasedThisFrame)
-            leftDragging = false;
+        if (mouse.leftButton.wasReleasedThisFrame) leftDragging = false;
 
-        // --- 오른쪽 버튼: 핀치 줌 시뮬레이션 ---
-        if (mouse.rightButton.wasPressedThisFrame)
-        {
-            rightDragging = true;
-            lastMousePos = pos;
-        }
-        if (mouse.rightButton.isPressed && rightDragging)
+        if (mouse.rightButton.isPressed)
         {
             float dy = pos.y - lastMousePos.y;
-            Zoom(dy * zoomSpeed * 10f);
+            ZoomAtScreenPosition(-dy * zoomSpeed, pos);
             lastMousePos = pos;
-        }
-        if (mouse.rightButton.wasReleasedThisFrame)
-            rightDragging = false;
-
-        // --- 마우스 휠 줌 ---
-        float wheelY = mouse.scroll.ReadValue().y;
-        if (Mathf.Abs(wheelY) > 0.01f)
-        {
-            Zoom(wheelY * zoomSpeed * 20f);
         }
     }
 #endif
 
-    // ==========================
-    // 카메라 제어
-    // ==========================
     void RotateFromDelta(Vector2 delta)
     {
-        yaw   += delta.x * rotationSpeed;
-        pitch -= delta.y * rotationSpeed;
-        pitch  = Mathf.Clamp(pitch, minPitch, maxPitch);
+        yaw += delta.x * rotationSpeed;
     }
 
-    void Zoom(float amount)
+    void ZoomAtScreenPosition(float deltaSize, Vector2 screenPos)
     {
-        distance = Mathf.Clamp(distance - amount, minDistance, maxDistance);
+        float oldSize = cam.orthographicSize;
+
+        Vector3 worldBefore = cam.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, 0f));
+
+        cam.orthographicSize = Mathf.Clamp(oldSize + deltaSize, minOrthoSize, maxOrthoSize);
+
+        Vector3 worldAfter = cam.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, 0f));
+
+        Vector3 diff = worldBefore - worldAfter;
+        zoomTarget.position += diff;
     }
 
     void ApplyCameraTransform()
     {
-        Quaternion rot = Quaternion.Euler(pitch, yaw, 0f);
-        Vector3 dir = rot * Vector3.forward;
-        transform.position = target.position - dir * distance;
+        Quaternion rot = Quaternion.Euler(fixedPitch, yaw, 0f);
+        float height = cam.orthographicSize / Mathf.Tan(fixedPitch * Mathf.Deg2Rad);
+        float backOffsetMultiplier = 5f;
+
+        transform.position = zoomTarget.position - rot * Vector3.forward * height * backOffsetMultiplier;
         transform.rotation = rot;
     }
 }
