@@ -52,6 +52,11 @@ public class Warrior : MonoBehaviour
 
     private IEnumerator CombatRoutine()
     {
+        while (GameManager.Instance != null && !GameManager.Instance.IsGamePlaying)
+        {
+            yield return null;
+        }
+        
         while (true)
         {
             if (isDead) yield break;
