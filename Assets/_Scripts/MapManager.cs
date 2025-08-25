@@ -1,10 +1,11 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using System.Collections.Generic;
 
 public class MapManager : MonoBehaviour
 {
-    [System.Serializable]
+    [Serializable]
     public class MapData
     {
         public string name;

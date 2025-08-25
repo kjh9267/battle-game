@@ -47,7 +47,6 @@ public class Warrior : MonoBehaviour
 
     void Start()
     {
-        // 0.25초마다 경로 업데이트 및 공격 체크
         StartCoroutine(CombatRoutine());
     }
 
@@ -146,8 +145,6 @@ public class Warrior : MonoBehaviour
     // Animator Event 호출용
     public void OnAttackHit()
     {
-        Debug.Log("on attack hit called");
-
         if (target == null) return;
 
         Warrior enemyWarrior = target.GetComponent<Warrior>();

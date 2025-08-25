@@ -47,6 +47,7 @@ public class WarriorPlacement : MonoBehaviour
     // ---------------- 모바일 터치 입력 ----------------
     private void OnFingerDown(Finger finger)
     {
+        if (GameManager.Instance != null && GameManager.Instance.IsGamePlaying) return;
         if (isDragging || mainCamera == null) return;
 
         Ray ray = mainCamera.ScreenPointToRay(finger.screenPosition);
@@ -63,12 +64,14 @@ public class WarriorPlacement : MonoBehaviour
 
     private void OnFingerMove(Finger finger)
     {
+        if (GameManager.Instance != null && GameManager.Instance.IsGamePlaying) return;
         if (!isDragging || finger.index != activeFingerId || mainCamera == null) return;
         MoveWithPointer(finger.screenPosition);
     }
 
     private void OnFingerUp(Finger finger)
     {
+        if (GameManager.Instance != null && GameManager.Instance.IsGamePlaying) return;
         if (!isDragging || finger.index != activeFingerId || mainCamera == null) return;
 
         isDragging = false;
@@ -81,6 +84,7 @@ public class WarriorPlacement : MonoBehaviour
     // ---------------- 에디터용 마우스 입력 (InputSystem) ----------------
     void Update()
     {
+        if (GameManager.Instance != null && GameManager.Instance.IsGamePlaying) return;
         if (mainCamera == null) return;
 
         var mouse = Mouse.current;
